@@ -1,0 +1,73 @@
+.button,
+.button:visited,
+input[type="button"],
+input[type="submit"]{
+    background-color: $accent-1;
+    @include background-image( 
+    	linear-gradient( rgba( white, 0.15), rgba( black, 0) )
+    );
+    border: 1px solid darken($accent-1, 10%);
+    color: $bg;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 0.75em;
+    line-height: 1.4em;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    padding: 6px 12px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px rgba( black, 0.8 );
+    vertical-align: top;
+    @include border-radius( 4px );
+    @include box-shadow ( 0 1px 4px rgba( black, 0.4 ), inset 0 1px 0 rgba( white, 0.2) );
+}
+.button:hover,
+.button:focus,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:focus,
+input[type="submit"]:focus {
+    background-color: lighten( $accent-1, 2% );
+    color: lighten( $bg, 5% );
+    text-decoration: none;
+}
+.button:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+    background-color: darken( $accent-1, 5% );
+    color: darken( $bg, 5% );
+    padding: 7px 12px 5px;
+    @include box-shadow( 0 1px 0 rgba(white, 0.1), inset 0 1px 4px rgba(black, 0.8) );
+}
+
+/* Alternate Color */
+.button.altbtn,
+input[type="button"].altbtn,
+input[type="submit"].altbtn{
+    background-color: $accent-3;
+    border: 1px solid darken($accent-3, 10%);
+}
+.button.altbtn:hover,
+.button.altbtn:focus,
+input[type="button"].altbtn:hover,
+input[type="submit"].altbtn:hover,
+input[type="button"].altbtn:focus,
+input[type="submit"].altbtn:focus {
+    background-color: lighten( $accent-3, 2% );
+}
+.button.altbtn:active,
+input[type="button"].altbtn:active,
+input[type="submit"].altbtn:active {
+    background-color: darken( $accent-3, 5% );
+}
+
+/* Alternate Size */
+.bigbtn{
+	font-size: 0.9em;
+	font-weight: 700;
+	padding: 15px 20px;
+}
+.bigbtn:active{
+	padding: 16px 20px 14px;
+}

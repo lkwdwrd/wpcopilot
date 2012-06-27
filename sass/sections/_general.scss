@@ -1,0 +1,181 @@
+*{
+	@include box-sizing(border-box);
+}
+p {
+  line-height: 1.25em;
+  margin-bottom: 1em; 
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.4em;
+  font-weight: 700;
+}
+h1 {
+  font-size: 2.5em; 
+}
+h2 {
+  font-size: 2.2em;
+}
+h3 {
+  font-size: 2.0em;
+}
+h4 {
+  font-size: 1.8em;
+}
+h5 {
+  font-size: 1.5em;
+}
+h6 {
+  font-size: 1.2em;
+}
+strong, b {
+  font-weight: 700;
+}
+em, i {
+  font-style: italic;
+}
+a, a:visited {
+  text-decoration: none; 
+}
+a:hover, a:focus {
+  text-decoration: underline; 
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ol, ul {
+  list-style-position: outside;
+  padding-left: 1em;
+  margin-left: 0.5em;
+  margin-bottom: 1em; 
+}
+li {
+  line-height: 1.15em;
+  margin-bottom: .2em; 
+}
+ol {
+  list-style: decimal; 
+}
+ol ol {
+  list-style-type: lower-alpha; 
+}
+ol ol ol {
+  list-style-type: upper-alpha; 
+}
+ul {
+  list-style-type: disc;
+}
+ul ul {
+  list-style-type: circle; 
+}
+ul ul ul {
+  list-style-type: square; 
+}
+input,
+textarea{
+  @include appearance(none);
+}
+textarea,
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+input[type="search"] {
+  width: 100%;
+  display: block;
+  margin-bottom: 1em;
+  resize: none;
+
+  border: 0;
+  @include border-radius( 4px );
+  padding: 5px;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 0.75em;
+  border: 1px solid rgba( $accent-1, 0.3 );
+  @include box-shadow( 0 0 1px rgba( black, 0.25 ), 1px 1px 7px -3px rgba( black, 0.5 ) inset );
+  @include background(
+      linear-gradient( top, lighten( $bg, 15% ), lighten( $bg, 5% ) )
+    );
+}
+input[type="checkbox"]{
+    @include background(
+      linear-gradient( top, lighten( $bg, 15% ), lighten( $bg, 5% ) )
+    );
+    border: medium none;
+    @include border-radius( 3px );
+    @include box-shadow( 0 1px 1px rgba(0, 0, 0, 0.37), 0 0 1px rgba(0, 0, 0, 0.25), 0 2px 0 #FFFFFF inset, 0 0 1px rgba(255, 255, 255, 0.65) inset, 0 -2px 0 rgba(0, 0, 0, 0.05) inset );
+    height: 15px;
+    margin-right: 4px;
+    margin-top: -2px;
+    outline: medium none;
+    padding: 0;
+    vertical-align: middle;
+    width: 15px;
+    position: relative;
+}
+input[type="checkbox"]:checked:before{
+  content: '\f00c';
+  font-family: 'icons';
+  font-size: 12px;
+  color: $accent-1;
+  position: absolute;
+  top: 3px;
+  right: 2px;
+}
+input[type="radio"]{
+    @extend input[type="checkbox"];
+    border-radius: 100%;
+}
+input[type="radio"]:checked:before{
+  @extend input[type="checkbox"]:checked:before;
+  content: '\f058';
+  font-size: 14px;
+  top: 2px;
+}
+select {
+  max-width: 100%;
+
+  @include background(
+      linear-gradient( top, lighten( $bg, 20% ), lighten( $bg, 15% ) )
+    );
+}
+form {
+  margin-bottom: 1em; 
+}
+blockquote {
+  width: 85%;
+  display: block;
+  margin: 0 auto 1em auto;
+  padding: 0.5em;
+}
+blockquote p:last-child {
+  margin-bottom: 0; 
+}
+code, pre {
+  font-family: "Courier New", Courier, monospace; 
+}
+pre {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 0 1em 1em;
+}
+table {
+  border: 1px solid;
+  padding: 0;
+  margin-bottom: 1em; 
+}
+td, th {
+  border: 1px solid;
+  padding: 0.1em;
+  text-align: center;
+  valign: middle; 
+}
+th {
+  font-weight: 700; 
+}
+small {
+  font-size: 0.8em; 
+}
+large {
+  font-size: 1.5em;
+}

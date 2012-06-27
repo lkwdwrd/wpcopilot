@@ -1,0 +1,13 @@
+@include font-face(
+    'icons',
+    font-files(
+        'font-awesome/fontawesome-webfont.woff', woff,
+        'font-awesome/fontawesome-webfont.ttf', truetype,
+        'font-awesome/fontawesome-webfont.svg#FontAwesomeRegular',svg),
+    'font-awesome/fontawesome-webfont.eot',
+    normal,
+    normal);
+
+.icon{
+  font-family: 'icons' !important;
+}

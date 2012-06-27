@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WP Copilot - Static HTML Build File</title>
+        <link href="../stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ 		<link href="../stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+ 		<!--[if IE]>
+      		<link href="../stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  		<![endif]-->
+    </head>
+    <body>
+    	<div id="top-bar">
+            <div class="content">
+            	<nav id="head-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="pagewrap" class="pagewrap">
+            <div class="featured">
+                <header>
+                    <div class="content">
+                        <div class="center">
+                        	<nav id="main-nav-left">
+                                <ul>
+                                    <li><a href="#"><span class="icon menu-icon">&#xf02d;</span><span class="menu-title">Articles</span></a></li>
+                                    <li><a href="#"><span class="icon menu-icon"><!-- &#xf03d; -->&#xf008;</span><span class="menu-title">Tutorials</span></a></li>
+                                </ul>
+                            </nav>
+                        	<h1 class="logo">
+                            	<img alt="WP Copilot Logo" title="WP Copilot Logo" src="../img/WPCopiot-Logo.png" />
+                            </h1>
+                            <nav id="main-nav-right">
+                                <ul>
+                                    <li><a href="#"><span class="icon menu-icon">&#xf02b;</span><span class="menu-title">Products</span></a></li>
+                                    <li><a href="#"><span class="icon menu-icon"><!--&#xf0a1;-->&#xf0c0;</span><span class="menu-title">Connect</span></a>
+                                        <ul>
+                                            <li><a href="#">Facebook</a></li>
+                                            <li><a href="#">Twitter</a></li>
+                                            <li><a href="#">Github</a></li>
+                                            <li><a href="#">Email</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+                <div class="content featured-content">
+                    <img src="../img/slider.png" style="display: block; margin: 0 auto;" />
+                </div>
+            </div>
+            <div class="main-wrap">
+                <div class="content main-body">
+                    <section id="main" class="wrap hasside">
+                        <h1>HTML Ipsum Presents</h1>
+               
+                        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+                        
+                        <h2>Header Level 2</h2>
+                                   
+                        <ol>
+                           <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                           <li>Aliquam tincidunt mauris eu risus.</li>
+                        </ol>
+                        
+                        <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+                        
+                        <h3>Header Level 3</h3>
+                        
+                        <ul>
+                           <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                           <li>Aliquam tincidunt mauris eu risus.</li>
+                        </ul>
+                        
+                        <pre><code>
+    #header h1 a { 
+        display: block; 
+        width: 300px; 
+        height: 80px; 
+    }
+                        </code></pre>
+                        <p>&nbsp;</p>
+                        <form action="#" method="post">
+                            <div>
+                                 <label for="name">Text Input:</label>
+                                 <input type="text" name="name" id="name" value="" tabindex="1" />
+                            </div>
+                        
+                            <div>
+                                 <h4>Radio Button Choice</h4>
+                        
+                                 <label for="radio-choice-1">Choice 1</label>
+                                 <input type="radio" name="radio-choice" id="radio-choice-1" tabindex="2" value="choice-1" />
+                        
+                                 <label for="radio-choice-2">Choice 2</label>
+                                 <input type="radio" name="radio-choice" id="radio-choice-2" tabindex="3" value="choice-2" />
+                            </div>
+                        
+                            <div>
+                                <label for="select-choice">Select Dropdown Choice:</label>
+                                <select name="select-choice" id="select-choice">
+                                    <option value="Choice 1">Choice 1</option>
+                                    <option value="Choice 2">Choice 2</option>
+                                    <option value="Choice 3">Choice 3</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="textarea">Textarea:</label>
+                                <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+                            </div>
+                            
+                            <div>
+                                <label for="checkbox">Checkbox:</label>
+                                <input type="checkbox" name="checkbox" id="checkbox" />
+                            </div>
+                        
+                            <div>
+                                <input type="button" value="Button 1" /><br>
+                                <input type="submit" class="altbtn" value="Submit Alt" />
+                                <a href="#" class="button altbtn bigbtn">A (big) Link Button</a>
+                            </div>
+                        </form>
+                    </section>
+                    <section id="sidebar">
+                        <aside class="widget">
+                            <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+                        </aside>
+                        <aside class="widget">
+                            <h2>Header Level 2</h2>
+                                       
+                            <ol>
+                               <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                               <li>Aliquam tincidunt mauris eu risus.</li>
+                            </ol>
+                        </aside>
+                    </section>
+                </div>
+            </div>
+        </div>
+  	    <footer>
+            <div class="content">
+            	<p class="smalltext copyright">
+                	&copy; 2012 WP Copilot &amp; Woodward Multimedia
+                </p>
+                <nav id="foot-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>

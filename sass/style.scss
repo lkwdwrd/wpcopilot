@@ -1,0 +1,42 @@
+/*!
+ * Theme Name: WP Copilot 1
+ * Theme URI: http://wpcopilot.net
+ * Description: The first theme for WP Copilot. The first of many, or so we can hope. :)
+ * Author: Luke Wodward
+ * Author URI: hptt://luke-woodward.com
+ * Version: 1.0.0
+
+ * License: GPL v2
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+/*! Copyright (C) 2012 WP Copilot, Woodward Multimedia, & Luke Woodward
+
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+
+/* Start Theme Styles */
+
+@import "sections/colors";
+@import "sections/fonts";
+@import "sections/general";
+@import "sections/buttons";
+@import "sections/structure";
+@import "sections/typography";
+@import "sections/navigation";

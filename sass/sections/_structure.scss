@@ -1,0 +1,110 @@
+/* General Elements */
+.pagewrap{
+	background: #EEE;
+}
+header{
+	padding: 20px 0;
+}
+.main-wrap{
+	background: url(../img/footer.png) bottom repeat-x;
+	padding: 20px 0;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+}
+.main-wrap:after{
+	content: '';
+	@include background(
+		radial-gradient( 60% -120px, lighten( $accent-1, 50% ), rgba( $bg, 0 ) 70% )
+	);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 0;
+	padding-top: 70%;
+	z-index: -1;
+	max-height: 100%;
+}
+.content{
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	@include pie-clearfix;
+}
+
+/* Top Bar */
+#top-bar{
+	@include background-image(
+		linear-gradient( top, lighten( $accent-3, 10% ), darken( $accent-3, 10% ) )
+	);
+	height: 27px;
+	border-bottom: 2px solid $accent-2;
+}
+
+/* Header */
+.logo{
+	display: inline-block;
+	margin: 0;
+	width: 33%;
+	position: relative;
+}
+
+/* Featured */
+.featured{
+	background: url(../img/paper.png) repeat;
+	@include box-shadow( inset 0 -12px 30px -15px black );
+	// border-bottom: 1px solid $accent-1;
+}
+.featured-content{
+	padding: 20px 0;
+}
+
+/* Body */
+.wrap{
+	padding: 20px;
+	// border-left: 1px solid $accent-1;
+	@include box-shadow( inset 18px 0px 15px -18px rgba( black, 0.5 ) );
+	@include border-radius( 2px 0 0 2px );
+}
+.hasside{
+	width: 70%;
+	float: left;
+}
+/* Sidebar */
+
+#sidebar{
+	width: 30%;
+	float: left;
+}
+.widget{
+	padding: 20px;
+	// border-left: 1px solid $accent-1;
+	// border-top: 1px solid $accent-1;
+	// border-bottom: 1px solid $accent-1;
+	@include box-shadow( inset 18px 0px 15px -18px rgba( black, 0.5 ), inset 0px 18px 15px -18px rgba( black, 0.5 ), inset 0px -18px 15px -18px rgba( black, 0.5 ) );
+	// @include border-radius( 3px 0 0 3px );
+	margin-bottom: 2px;
+	position: relative;
+	z-index: 1;
+	@include border-radius( 2px 0 0 2px );
+}
+.widget:first-child{
+	@include box-shadow( inset 18px 0px 15px -18px rgba( black, 0.5 ), inset 0px -18px 15px -18px rgba( black, 0.5 ) );
+}
+.widget:last-child{
+	@include box-shadow( inset 18px 0px 15px -18px rgba( black, 0.5 ), inset 0px 18px 15px -18px rgba( black, 0.5 ) );
+}
+
+
+/* Footer */
+footer{
+	background: $accent-1;
+	@include box-shadow( inset 0 25px 30px -35px white );
+	padding: 15px 0 10px;
+	@include pie-clearfix;
+}
+.copyright{
+	float: left;
+	margin: 0;
+}

@@ -1,0 +1,157 @@
+nav{
+	display: inline-block;
+}
+nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+nav ul li{
+	position: relative;
+	display: inline-block;
+	margin: 0;
+}
+nav ul ul{
+	position: absolute;
+	top: 100%;
+	z-index: 3000;
+	width: 100%;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+	@include transition ( opacity 0.5s ease );
+}
+nav ul li:hover ul,
+nav ul li:focus ul{
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity= 1);
+}
+nav ul ul li{
+	display: block;
+	overflow: hidden;
+}
+nav ul ul li a{
+	padding: 0px;
+	font-size: 1px;
+	line-height: 0em;
+	@include transition( padding 0.5s ease, font-size 0.5s ease, line-height 0.5s ease );
+	@include translate3d( 0, 0, 0 );
+}
+nav ul li:hover ul li a,
+nav ul li:focus ul li a{
+	font-size: 0.8em;
+	line-height: 1em;
+	padding: 3px 10px;
+}
+#head-nav,
+#foot-nav{
+	font-size: 0.8em;
+	float: right;
+
+	ul{
+		padding: 5px 0;
+	}
+	li{
+		margin-left: 5px;
+		padding-left: 5px;
+		border-left: 1px solid $accent-1;
+	}
+	li:first-child{
+		border: 0;
+	}
+	li a{
+		color: $bg;
+	}
+	li a:hover,
+	li a:focus{
+		color: lighten( $bg, 10% );
+		text-decoration: none;
+	}
+}
+#main-nav-left,
+#main-nav-right{
+	width: 32%;
+	position: relative;
+	z-index: 1000;
+
+	.menu-icon{
+		display: block;
+		font-size: 50px;
+		line-height: 1em;
+		color: $accent-3;
+		text-shadow: -1px 1px 1px rgba(black, 0.5);
+	}
+	li{
+		width: 49%;
+		margin-left: -5px;
+		border-collapse: collapse;
+	}
+	ul ul{
+		border-right: 1px solid $accent-1;
+		border-bottom: 1px solid $accent-1;
+		border-left: 1px solid $accent-1;
+	}
+	ul ul li{
+		width: 100%;
+		text-align: left;
+		margin: 0;
+		background: $bg;
+		@include background(
+			linear-gradient( top, lighten( $bg, 10% ), $bg )
+		);
+		border-top: 1px dotted lighten( $accent-1, 20% );
+	}
+
+	ul ul li a{
+		border: 0;
+		font-family: 'judson', serif;
+		color: $accent-1;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		@include transition( padding 0.5s ease-in-out, font-size 0.5s ease-in-out, line-height 0.5s ease-in-out );
+	}
+	ul ul li a:hover,
+	ul ul li a:focus{
+		padding-left: 14px;
+	}
+	a{
+		display: block;
+		border-left: 1px solid rgba($accent-1, 0);
+		border-right: 1px solid rgba($accent-1, 0);
+		@include box-shadow( inset 15px 0px 15px -30px rgba( black, 0.5 ), inset -15px 0px 15px -30px rgba( black, 0.5 ) );
+		@include transition( border-color 0.5s ease, box-shadow 0.5s ease );
+
+	}
+	a:hover,
+	li:hover a,
+	a:focus,
+	li:focus a{
+		text-decoration: none;
+		border-color: $accent-1;
+		@include box-shadow( inset 15px 0px 15px -18px rgba( black, 0.5 ), inset -15px 0px 15px -18px rgba( black, 0.5 ) );
+	}
+	a .menu-title{
+		display: block;
+		font-family: 'judson', serif;
+		color: $accent-1;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-size: 0.9em;
+		text-shadow: -1px 1px 0 white;
+		position: relative;
+		@include transform( translate3d(0, 3px, 0) );
+		@include transition( transform 0.5s ease-in-out );
+	}
+	a:hover .menu-title,
+	a:focus .menu-title{
+		@include transform( translate3d( 0, 0, 0) );
+	}
+}
+
+#foot-nav ul{
+	padding: 0;
+}
+#foot-nav li{
+	border-color: $bg;
+}

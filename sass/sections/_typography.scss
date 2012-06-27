@@ -1,0 +1,33 @@
+body{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: darken( $accent-1, 10% );
+}
+a, a:visited{
+	color: scale-saturation( $accent-2, -10% );
+}
+a:hover, a:active{
+	color: scale-saturation( $accent-2, 45% );
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Judson', serif;
+  weight: 700;
+  color: $accent-1;
+  @include text-shadow( -1px 1px 1px rgba( black, 0.4 ) );
+}
+h2{
+  color: $accent-2;
+}
+h3{
+  color: $accent-3;
+}
+.smalltext{
+	font-size: 0.8em;
+}
+.center{
+  text-align: center;
+}
+
+/* footer */
+footer{
+	color: $bg;
+}
