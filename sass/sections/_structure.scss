@@ -6,7 +6,7 @@ header{
 	padding: 20px 0;
 }
 .main-wrap{
-	background: url(../img/footer.png) bottom repeat-x;
+	background: url(  img/footer.png ) bottom repeat-x;
 	padding: 20px 0;
 	position: relative;
 	overflow: hidden;
@@ -52,7 +52,7 @@ header{
 
 /* Featured */
 .featured{
-	background: url(../img/paper.png) repeat;
+	background: url( img/paper.png ) repeat;
 	@include box-shadow( inset 0 -12px 30px -15px black );
 	// border-bottom: 1px solid $accent-1;
 }

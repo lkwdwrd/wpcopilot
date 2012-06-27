@@ -39,3 +39,50 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<div id="top-bar">
+        <div class="content">
+            <nav id="head-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="pagewrap" class="pagewrap">
+        <div class="featured">
+            <header>
+                <div class="content">
+                    <div class="center">
+                        <nav id="main-nav-left">
+                            <ul>
+                                <li><a href="#"><span class="icon menu-icon">&#xf02d;</span><span class="menu-title">Articles</span></a></li>
+                                <li><a href="#"><span class="icon menu-icon"><!-- &#xf03d; -->&#xf008;</span><span class="menu-title">Tutorials</span></a></li>
+                            </ul>
+                        </nav>
+                        <h1 class="logo">
+                            <img alt="WP Copilot Logo" title="WP Copilot Logo" src="../img/WPCopiot-Logo.png" />
+                        </h1>
+                        <nav id="main-nav-right">
+                            <ul>
+                                <li><a href="#"><span class="icon menu-icon">&#xf02b;</span><span class="menu-title">Products</span></a></li>
+                                <li><a href="#"><span class="icon menu-icon"><!--&#xf0a1;-->&#xf0c0;</span><span class="menu-title">Connect</span></a>
+                                    <ul>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Twitter</a></li>
+                                        <li><a href="#">Github</a></li>
+                                        <li><a href="#">Email</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="content featured-content">
+                    <img src="../img/slider.png" style="display: block; margin: 0 auto;" />
+                </div>
+            </div>
+            <div class="main-wrap">
+            	<div class="content main-body">
